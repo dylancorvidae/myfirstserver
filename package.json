@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server.js",
+    "update": "rm -rf public && cp -R ../Pokedex public && rm -rf public/.git"
   },
   "repository": {
     "type": "git",
