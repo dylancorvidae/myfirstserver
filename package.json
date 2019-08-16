@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/dylancorvidae/myfirstserver/issues"
   },
-  "homepage": "https://github.com/dylancorvidae/myfirstserver#readme"
+  "homepage": "https://github.com/dylancorvidae/myfirstserver#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  }
 }
