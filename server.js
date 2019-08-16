@@ -14,7 +14,7 @@ app.get('/data', (request, response) => {
     const airplanes = {
         departure: Date.now(),
         canFly: true,
-        pilot: 'Well boop Trained'
+        pilot: 'Well booheyeyep Trained'
     };
     response.status(200).json(airplanes);
 });
