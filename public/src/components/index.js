@@ -1,4 +1,4 @@
-import App from './components/app/App.js';
+import App from './app/App.js';
 
 const root = document.getElementById('root');
 const app = new App();
