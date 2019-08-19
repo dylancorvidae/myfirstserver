@@ -4,14 +4,17 @@ import PokeCard from './Poke-Card.js';
 class PokeList extends Component {
 
     onRender(dom) {
-        const pokemons = this.props.pokemon;
+        const pokemons = this.props.pokemons.results;
 
-        pokemons.forEach(pokemon => {
-            const props = { pokemon: pokemon };
-            const pokemonCard = new PokeCard(props);
-            const pokemonCardDOM = pokemonCard.renderDOM();
-            dom.appendChild(pokemonCardDOM);
-        });
+        if(pokemons) {
+            pokemons.forEach(pokemon => {
+                const props = { pokemon: pokemon };
+                const pokemonCard = new PokeCard(props);
+                const pokemonCardDOM = pokemonCard.renderDOM();
+                dom.appendChild(pokemonCardDOM);
+            
+            });
+        }
     }
 
     renderHTML() {
